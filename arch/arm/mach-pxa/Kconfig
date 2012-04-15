@@ -281,6 +281,12 @@ config MACH_VPAC270
 
 comment "End-user Products (sorted by vendor name)"
 
+config MACH_SGH_I740
+	bool "Samsung i740"
+	select PXA3xx
+	select CPU_PXA310
+	select HAVE_PWM
+
 config MACH_H4700
 	bool "HP iPAQ hx4700"
 	select PXA27x
